@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ASpanFormer utilizes global-local attention sturcture to pass messages across views for robust and accurate image matching, specially an
+        uncertainty driven framework is used to adaptivelty adust local attention span.">
+  <meta name="keywords" content="Image Matching, Transformer, Adaptive Attention Span">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAM-Net</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">SAM-Net: Self-Attention Matching Network with LoFTR, Spatial Transformer Networks, and Knowledge Distillation for Efficient 2D Feature Matching in CV</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://benjaminkelenyi.github.io/">Benjamin Kelenyi</a>,</span>
+            <span class="author-block">
+              Victor Domsa,
+            <span class="author-block">
+              <a href="http://rocon.utcluj.ro/~levente">Levente Tamas</a></span>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Technical University of Cluj-Napoca, Memorandumului 28, 400114 Romania</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2208.14201"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2208.14201"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/apple/ml-aspanformer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center><img src="static/images/intro.png" alt="Alternative Text" class="center"></center>
+      <h2 class="subtitle has-text-centered">
+        Intro text and image: 
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Add abstract here: 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/ Abstract. -->
+
+    <!-- Method. -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Method</h2>
+          <p> Add description here:
+          </p>
+          <center><img src="static/images/network.png" alt="Alternative Text" width="80%" class="center"></center>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+  
+    <!-- Visualization. -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Visualization</h2>
+          <center><img src="static/images/matching.png" alt="Alternative Text" width="80%" class="center"></center>
+        </div>
+      </div>
+    </div>
+    <!--/ Visualization. -->
+
+    <!-- Benchmarking. -->
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Benchmarking</h2>
+          <center><img src="static/images/res.png" alt="Alternative Text" width="80%" class="center"></center>
+        </div>
+      </div>
+    </div>
+    <!--/ Benchmarking. -->
+
+  </div>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{todoooodododo,
+  author    = {Benjamin Kelenyi, Victor Domsa, Levente Tamas},
+  title     = {SAM-Net: Self-Attention Matching Network with LoFTR, Spatial Transformer Networks, and Knowledge Distillation for Efficient 2D Feature Matching in CV},
+  journal   = {todoooodododo},
+  year      = {2023}
+}</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
